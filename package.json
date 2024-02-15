@@ -1,0 +1,16 @@
+{
+  "name": "mendeley-to-wos",
+  "version": "1.0.0",
+  "description": "Tool designed to facilitate the conversion of Mendeley BibTeX files to Web of Science (WOS) BibTeX format.",
+  "main": "index.js",
+  "author": "David Obregon",
+  "scripts": {
+    "convert": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
