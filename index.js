@@ -124,6 +124,11 @@ async function convertToWOS(mendeleyBib) {
       wosEntry += `booktitle={${booktitleMatch[1]}},\n`;
     }
 
+    const keywordsMatch = entryData.match(/keywords\s*=\s*\{([^}]*)\}/);
+    if (keywordsMatch) {
+      wosEntry += `keywords={${keywordsMatch[1]}},\n`;
+    }
+
     const monthMatch = entryData.match(/month\s*=\s*\{([^}]*)\}/);
     if (monthMatch) {
       const formattedMonth = formatMonth(monthMatch[1]);
